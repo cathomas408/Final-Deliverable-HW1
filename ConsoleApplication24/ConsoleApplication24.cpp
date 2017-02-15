@@ -90,6 +90,7 @@ int main()
 
 		default:
 			cout << "Invalid option" << endl;
+			break;
 		}
 
 
@@ -117,11 +118,11 @@ int main()
 
 	//cout.setf(ios::right);
 
-	cout << setw(30) << "your starting balance was:" << setw(30) << "$" << sBalance << std::endl;
-	cout << setw(30) << "your total deposits are:" << setw(30) << "$" << totDeposits << std::endl;
-	cout << setw(30) << "your total withdrawals are:" << setw(30) << "$" << totWithdrawal << std::endl;
-	cout << setw(30) << "your total checks are:" << setw(30) << "$" << totChecks << std::endl;
-	cout << setw(30) << "your current balance is:" << setw(30) << "$" << curBalance << std::endl;
+	cout << setw(30) << "your starting balance was:" << setw(30) << right << setprecision(2)<< fixed << "$" << sBalance << std::endl;
+	cout << setw(30) << "your total deposits are:" << setw(30) << right << setprecision(2) << fixed << "$" <<  totDeposits << std::endl;
+	cout << setw(30) << "your total withdrawals are:" << setw(30) << right << setprecision(2) << fixed << "$" << totWithdrawal << std::endl;
+	cout << setw(30) << "your total checks are:" << setw(30) << right << setprecision(2) << fixed << "$" << totChecks << std::endl;
+	cout << setw(30) << "your current balance is:" << setw(30) << right << setprecision(2) << fixed << "$" << curBalance << std::endl;
 
 
 
